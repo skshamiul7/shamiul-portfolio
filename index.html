@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SK Shamiul Islam | Software Engineer</title>
+  <meta name="description" content="SK Shamiul Islam — Software Engineer & Web Developer. B.Sc. in CSE, Bangladesh University. Skilled in Python, JavaScript, PHP, MySQL and AI/ML." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Prevent theme flash: apply saved theme before CSS paints -->
+  <script>
+    (function() {
+      var saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="bg-glow"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>Shamiul<span class="logo-bracket">/&gt;</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#cv">CV</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li class="nav-cta-row">
+            <a href="#contact" class="nav-contact">Contact</a>
+            <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark / light mode" title="Toggle theme">
+              <span class="theme-icon theme-icon-sun" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4"/>
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+                </svg>
+              </span>
+              <span class="theme-icon theme-icon-moon" aria-hidden="true">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/>
+                </svg>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div class="hero-inner">
+        <p class="hero-greeting">Hi, I'm</p>
+        <h1 class="hero-name">SK Shamiul Islam</h1>
+        <h2 class="hero-role">
+          <span class="gradient-text" id="typed"></span>
+          <span class="cursor">|</span>
+        </h2>
+        <p class="hero-desc">
+          Software engineer and full-stack web developer from Bangladesh, focused
+          on building scalable solutions with Python, JavaScript, PHP and MySQL —
+          and growing my expertise in AI to solve real-world problems.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="resume.pdf" download class="btn btn-ghost">⬇ Download CV</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <h3>3.80</h3>
+            <p>CGPA / 4.00</p>
+          </div>
+          <div class="stat">
+            <h3>2026</h3>
+            <p>B.Sc. Graduation</p>
+          </div>
+          <div class="stat">
+            <h3>5+</h3>
+            <p>Languages</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Image -->
+      <div class="hero-photo-wrap">
+        <div class="hero-photo-ring">
+          <div class="hero-photo-inner">
+            <img src="profile.jpg" alt="SK Shamiul Islam" class="hero-photo"
+                 onerror="this.style.display='none'; this.parentElement.parentElement.classList.add('no-photo');" />
+            <div class="hero-photo-fallback">SI</div>
+          </div>
+        </div>
+        <div class="hero-photo-glow"></div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section-tag">01 — About</p>
+      <h2 class="section-title">About Me</h2>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a final-year <strong>B.Sc. in Computer Science &amp; Engineering</strong>
+            student at Bangladesh University, Dhaka, graduating in 2026 with a
+            CGPA of 3.80. I love turning ideas into working products.
+          </p>
+          <p>
+            My core strength is <strong>full-stack web development</strong> —
+            I build complete applications with HTML, CSS, JavaScript, PHP and
+            MySQL. I'm also exploring <strong>AI/ML</strong> with NumPy, Pandas
+            and scikit-learn to build smarter systems.
+          </p>
+          <p>
+            I'm looking for a stimulating role where I can apply my software
+            development expertise, deliver scalable solutions, and grow into
+            AI-driven engineering.
+          </p>
+          <div class="about-tags">
+            <span>Python</span>
+            <span>C / C++</span>
+            <span>PHP</span>
+            <span>JavaScript</span>
+            <span>MySQL</span>
+            <span>HTML &amp; CSS</span>
+            <span>NumPy</span>
+            <span>Pandas</span>
+            <span>scikit-learn</span>
+            <span>Git / GitHub</span>
+          </div>
+        </div>
+
+        <div class="about-card reveal">
+          <div class="card-glow"></div>
+          <h3>Quick Info</h3>
+          <ul>
+            <li><span>📍</span> Chuadanga, Bangladesh</li>
+            <li><span>💼</span> Open to opportunities</li>
+            <li><span>🎓</span> B.Sc. CSE — Bangladesh University</li>
+            <li><span>🗣️</span> Bengali (Native), English (Fluent)</li>
+            <li><span>🩸</span> Blood Group: A+</li>
+            <li><span>🎂</span> 7 August 2002</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section" id="skills">
+    <div class="container">
+      <p class="section-tag">02 — Skills</p>
+      <h2 class="section-title">What I Work With</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">💻</div>
+          <h3>Programming Languages</h3>
+          <p>Python, C, C++, PHP, JavaScript</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌐</div>
+          <h3>Web Development</h3>
+          <p>HTML, CSS, PHP, MySQL — full-stack web applications</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🗄️</div>
+          <h3>Databases</h3>
+          <p>MySQL — database management, querying &amp; design</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🤖</div>
+          <h3>AI / ML Basics</h3>
+          <p>NumPy, Pandas, scikit-learn</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🛠️</div>
+          <h3>Tools &amp; Workflow</h3>
+          <p>Git, GitHub, VS Code, Microsoft 365, Google Workspace, Canva</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🚀</div>
+          <h3>Soft Skills</h3>
+          <p>Problem solving, teamwork, project management, leadership</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="section" id="education">
+    <div class="container">
+      <p class="section-tag">03 — Education</p>
+      <h2 class="section-title">Educational Qualifications</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2026 (Expected)</span>
+            <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+            <p class="timeline-inst">Bangladesh University, Mohammadpur, Dhaka-1207</p>
+            <p class="timeline-result">CGPA: 3.80 / 4.00</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020</span>
+            <h3>HSC (Science)</h3>
+            <p class="timeline-inst">Pallabi Government College, Mirpur, Dhaka — Board: Dhaka</p>
+            <p class="timeline-result">CGPA: 4.59 / 5.00</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2018</span>
+            <h3>SSC (Science)</h3>
+            <p class="timeline-inst">Victoria Jubilee Government High School, Chuadanga — Board: Jessore</p>
+            <p class="timeline-result">CGPA: 4.56 / 5.00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section-tag">04 — Work</p>
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="projects-grid">
+        <a href="https://github.com/skshamiul7/E-commerce-website" class="project-card reveal" target="_blank">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links"><span>↗</span></div>
+          </div>
+          <h3>E-commerce-website</h3>
+          <p>my first website i've made with (html, css, J.S and php).</p>
+          <div class="project-tags">
+            <span>Java Script</span><span>HTML/CSS</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/skshamiul7/AI_powered_Student_lirbrary_management_System" class="project-card reveal" target="_blank">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links"><span>↗</span></div>
+          </div>
+          <h3>AI-Powered Digital Library Management System</h3>
+          <p>A Python script suite that automates repetitive tasks — file handling, data parsing and report generation.</p>
+          <div class="project-tags">
+            <span>HTML/CSS</span><span>MySQL</span><span>PHP/PDO</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/skshamiul7/ml-breast-cancer-prediction" class="project-card reveal" target="_blank">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links"><span>↗</span></div>
+          </div>
+          <h3>ML Mini Project</h3>
+          <p>ml-breast-cancer-prediction</p>
+          <div class="project-tags">
+            <span>NumPy</span><span>scikit-learn</span><span>Pandas</span><span>Matplotlib </span>
+          </div>
+        </a>
+
+        <a href="#" class="project-card reveal" target="_blank">
+          <div class="project-top">
+            <div class="folder-icon">📁</div>
+            <div class="project-links"><span>↗</span></div>
+          </div>
+          <h3>Portfolio Website</h3>
+          <p>This responsive, dark-themed portfolio site — built with pure HTML, CSS and JavaScript.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV Section -->
+  <section class="section" id="cv">
+    <div class="container">
+      <p class="section-tag">05 — Resume</p>
+      <h2 class="section-title">My Curriculum Vitae</h2>
+
+      <div class="cv-wrap reveal">
+        <div class="cv-toolbar">
+          <div class="cv-toolbar-left">
+            <span class="cv-file-icon">📄</span>
+            <div>
+              <strong>SK_Shamiul_Islam_CV.pdf</strong>
+              <small>Updated · 2026</small>
+            </div>
+          </div>
+          <div class="cv-toolbar-right">
+            <a href="resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+              ↗ Open in new tab
+            </a>
+            <a href="resume.pdf" download class="btn btn-primary btn-sm">
+              ⬇ Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="cv-viewer">
+          <object data="resume.pdf" type="application/pdf" width="100%" height="100%">
+            <div class="cv-fallback">
+              <p>📄 Your browser can't display the PDF inline.</p>
+              <a href="resume.pdf" target="_blank" class="btn btn-primary">Open CV in new tab</a>
+            </div>
+          </object>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="section" id="certificates">
+    <div class="container">
+      <p class="section-tag">06 — Achievements</p>
+      <h2 class="section-title">Certificates</h2>
+
+      <div class="cert-grid">
+        <a href="certificates/cert1.jpg" target="_blank" class="cert-card reveal">
+          <div class="cert-image">
+            <img src="certificates/cert1.jpg" alt="Certificate 1" onerror="this.parentElement.classList.add('placeholder'); this.remove();">
+            <span class="cert-fallback">🏆</span>
+          </div>
+          <div class="cert-info">
+            <h3>AI+ Prompt Engineer Level 1™</h3>
+            <p>Blockchain-verified certification covering prompt design, LLM behavior, and structured AI workflows.</p>
+            <span class="cert-year">2025</span>
+          </div>
+        </a>
+
+        <a href="certificates/cert2.jpg" target="_blank" class="cert-card reveal">
+          <div class="cert-image">
+            <img src="certificates/cert2.jpg" alt="Certificate 2" onerror="this.parentElement.classList.add('placeholder'); this.remove();">
+            <span class="cert-fallback">🏆</span>
+          </div>
+          <div class="cert-info">
+            <h3>MySQL — Certificate of Achievement</h3>
+            <p>Hands-on course covering MySQL fundamentals — queries, joins, data modeling, and database management.</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </a>
+
+        <a href="certificates/cert3.jpg" target="_blank" class="cert-card reveal">
+          <div class="cert-image">
+            <img src="certificates/cert3.jpg" alt="Certificate 3" onerror="this.parentElement.classList.add('placeholder'); this.remove();">
+            <span class="cert-fallback">🏆</span>
+          </div>
+          <div class="cert-info">
+            <h3>Career Essentials in Project Management</h3>
+            <p>Microsoft-authored learning path covering project planning, team leadership, and end-to-end project delivery.</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </a>
+
+        <a href="certificates/cert4.jpg" target="_blank" class="cert-card reveal">
+          <div class="cert-image">
+            <img src="certificates/cert4.jpg" alt="OOP in C++ Certificate" onerror="this.parentElement.classList.add('placeholder'); this.remove();">
+            <span class="cert-fallback">🏆</span>
+          </div>
+          <div class="cert-info">
+            <h3>OOP in C++ for Beginners</h3>
+            <p>Hands-on C++ course covering object-oriented programming — classes, inheritance, polymorphism, and encapsulation.</p>
+            <span class="cert-year">2024</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section-tag">07 — Contact</p>
+      <h2 class="section-title">Let's Build Something</h2>
+
+      <div class="contact-wrap">
+        <p class="contact-desc">
+          I'm always open to discussing new projects, internships or full-time
+          roles. Reach out any time — I usually reply within 24 hours.
+        </p>
+
+        <!-- Netlify form: name + hidden form-name + data-netlify are required -->
+        <form class="contact-form" id="contactForm" name="contact" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="contact" />
+
+  <div class="form-row">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+  </div>
+  <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+  <button type="submit" class="btn btn-primary">Send Message</button>
+  <p class="form-msg" id="formMsg"></p>
+</form>
+
+        <div class="socials-wrap">
+          <p class="socials-label">Or find me on</p>
+          <div class="socials">
+            <a href="https://github.com/skshamiul7" target="_blank" rel="noopener" class="social-btn">
+              <span class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.64-5.48 5.94.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+              </span>
+              <span class="social-text">
+                <strong>GitHub</strong>
+                <small>@skshamiul7</small>
+              </span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/sk-shamiul-islam-a39491270/" target="_blank" rel="noopener" class="social-btn">
+              <span class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0Z"/></svg>
+              </span>
+              <span class="social-text">
+                <strong>LinkedIn</strong>
+                <small>sk-shamiul-islam</small>
+              </span>
+            </a>
+
+            <a href="mailto:skshamiulislam7@gmail.com" class="social-btn">
+              <span class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+              </span>
+              <span class="social-text">
+                <strong>Email</strong>
+                <small>skshamiulislam7@gmail.com</small>
+              </span>
+            </a>
+
+            <a href="tel:+8801571597501" class="social-btn">
+              <span class="social-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92Z"/></svg>
+              </span>
+              <span class="social-text">
+                <strong>Phone</strong>
+                <small>+880 1571 597501</small>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Built with 💙 by SK Shamiul Islam · © 2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

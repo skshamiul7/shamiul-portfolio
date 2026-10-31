@@ -7,11 +7,23 @@ window.addEventListener('scroll', () => {
 // ===== Mobile menu toggle =====
 const menuToggle = document.getElementById('menuToggle');
 const navLinks = document.querySelector('.nav-links');
+function closeMenu() {
+  navLinks.classList.remove('open');
+  menuToggle.setAttribute('aria-expanded', 'false');
+}
+
 menuToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.toggle('open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
 document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
+  link.addEventListener('click', closeMenu);
+});
+document.addEventListener('keydown', event => {
+  if (event.key === 'Escape' && navLinks.classList.contains('open')) {
+    closeMenu();
+    menuToggle.focus();
+  }
 });
 
 // ===== Theme toggle (dark / light) =====
@@ -107,7 +119,11 @@ if (form) {
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encoded,
     })
-      .then(() => {
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Contact form request failed with status ${response.status}`);
+        }
+
         formMsg.textContent = "✅ Thanks! I'll get back to you soon.";
         formMsg.style.color = '#22d3ee';
         form.reset();
